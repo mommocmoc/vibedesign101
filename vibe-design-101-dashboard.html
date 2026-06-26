@@ -29,6 +29,19 @@
   }
   .wrap{max-width:1120px;margin:0 auto;padding:54px 26px 90px;position:relative;z-index:2}
 
+  /* top navigation */
+  .topnav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;
+    gap:12px;padding:11px 22px;background:rgba(251,246,236,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .topnav .brand{font-family:'Gowun Batang',serif;font-weight:700;font-size:15px;color:var(--ink);text-decoration:none;letter-spacing:-.3px}
+  .topnav .brand em{font-style:normal;color:var(--orange)}
+  .navlinks{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+  .navlinks a{font-family:'Gowun Dodum',sans-serif;font-size:12.5px;color:var(--ink-soft);text-decoration:none;
+    padding:6px 12px;border-radius:999px;transition:background .2s,color .2s;white-space:nowrap}
+  .navlinks a:hover{background:rgba(58,53,46,.07);color:var(--ink)}
+  .navlinks a.active{background:var(--orange);color:#fff}
+  @media(max-width:600px){.topnav{padding:9px 12px}.topnav .brand{display:none}
+    .navlinks{gap:4px;justify-content:center}.navlinks a{font-size:11px;padding:5px 8px}}
+
   /* decorative blobs */
   .blob{position:fixed;border-radius:46% 54% 60% 40%/52% 44% 56% 48%;filter:blur(3px);z-index:0;pointer-events:none}
   .b1{width:280px;height:280px;background:var(--orange);top:-90px;right:-70px;opacity:.18}
@@ -117,6 +130,15 @@
 </style>
 </head>
 <body>
+<nav class="topnav">
+  <a class="brand" href="index.html">Vibe <em>Design</em> 101</a>
+  <div class="navlinks">
+    <a href="index.html">후기</a>
+    <a href="vibe_design_101_EN.html">English</a>
+    <a href="vibe-design-101-dashboard.html" class="active">만족도 조사</a>
+    <a href="https://www.figma.com/board/nYQ1kQ2oDCaO19Jg6x5ZAg/AI-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%9B%8C%ED%81%AC%EC%88%8D-%EB%B3%B4%EB%93%9C?node-id=0-1&amp;t=5GRW6VlmSF0FazdG-1" target="_blank" rel="noopener">FigJam 보드 ↗</a>
+  </div>
+</nav>
 <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
 <div class="wrap">
 
