@@ -26,7 +26,9 @@ template = """[연세대학교 Vibe Design 101 워크숍 후기 대시보드 오
 
 ▶ 워크숍 후기 대시보드 확인: https://vibedesign.cowcowwow.kr
 
-함께해 주신 소중한 시간에 다시 한번 감사드리며, 다음에 더 유익한 기회로 뵙겠습니다. 감사합니다."""
+함께해 주신 소중한 시간에 다시 한번 감사드리며, 다음에 더 유익한 기회로 뵙겠습니다. 
+
+소재환 드림"""
 
 def send_via_applescript(phone, message):
     # macOS Messages 앱을 이용한 문자 전송 AppleScript
